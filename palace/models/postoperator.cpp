@@ -762,7 +762,7 @@ void PostOperator<solver_t>::MeasureSParameter() const
     }
 
     // Currently S-Parameters are not calculated for mixed lumped & wave ports,
-    // so can treat them separatley.
+    // so can treat them separately.
     for (const auto &[idx, data] : fem_op->GetLumpedPortOp())
     {
       // Get previously computed data: should never fail as defined by MeasureLumpedPorts.
